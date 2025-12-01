@@ -1,0 +1,6 @@
+@VianasCodeLab_HostAddress = http://localhost:5253
+
+GET {{VianasCodeLab_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
