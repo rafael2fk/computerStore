@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+9ljmzCfyXc=",
+  "dgSpecHash": "pO/Hpn5dHQM=",
   "success": true,
-  "projectFilePath": "C:\\Estudos\\01 - Estudos\\06 - ProjetoPessoal\\01 - VianasCodeLab\\VianasCodeLab\\VianasCodeLab\\VianasCodeLab.csproj",
+  "projectFilePath": "C:\\Estudos\\01 - Estudos\\05 - ProjetoPessoal\\01 - VianasCodeLab\\VianasCodeLab\\VianasCodeLab\\VianasCodeLab.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pc\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

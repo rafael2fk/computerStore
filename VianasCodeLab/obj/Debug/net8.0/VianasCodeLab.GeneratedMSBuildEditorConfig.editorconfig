@@ -17,37 +17,37 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = VianasCodeLab
 build_property.RootNamespace = VianasCodeLab
-build_property.ProjectDir = C:\Estudos\01 - Estudos\06 - ProjetoPessoal\01 - VianasCodeLab\VianasCodeLab\VianasCodeLab\
+build_property.ProjectDir = C:\Estudos\01 - Estudos\05 - ProjetoPessoal\01 - VianasCodeLab\VianasCodeLab\VianasCodeLab\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Estudos\01 - Estudos\06 - ProjetoPessoal\01 - VianasCodeLab\VianasCodeLab\VianasCodeLab
+build_property.MSBuildProjectDirectory = C:\Estudos\01 - Estudos\05 - ProjetoPessoal\01 - VianasCodeLab\VianasCodeLab\VianasCodeLab
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Estudos/01 - Estudos/06 - ProjetoPessoal/01 - VianasCodeLab/VianasCodeLab/VianasCodeLab/Views/Computer/Create.cshtml]
+[C:/Estudos/01 - Estudos/05 - ProjetoPessoal/01 - VianasCodeLab/VianasCodeLab/VianasCodeLab/Views/Computer/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcHV0ZXJcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Estudos/01 - Estudos/06 - ProjetoPessoal/01 - VianasCodeLab/VianasCodeLab/VianasCodeLab/Views/Computer/Delete.cshtml]
+[C:/Estudos/01 - Estudos/05 - ProjetoPessoal/01 - VianasCodeLab/VianasCodeLab/VianasCodeLab/Views/Computer/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcHV0ZXJcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Estudos/01 - Estudos/06 - ProjetoPessoal/01 - VianasCodeLab/VianasCodeLab/VianasCodeLab/Views/Computer/Details.cshtml]
+[C:/Estudos/01 - Estudos/05 - ProjetoPessoal/01 - VianasCodeLab/VianasCodeLab/VianasCodeLab/Views/Computer/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcHV0ZXJcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Estudos/01 - Estudos/06 - ProjetoPessoal/01 - VianasCodeLab/VianasCodeLab/VianasCodeLab/Views/Computer/Edit.cshtml]
+[C:/Estudos/01 - Estudos/05 - ProjetoPessoal/01 - VianasCodeLab/VianasCodeLab/VianasCodeLab/Views/Computer/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcHV0ZXJcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Estudos/01 - Estudos/06 - ProjetoPessoal/01 - VianasCodeLab/VianasCodeLab/VianasCodeLab/Views/Computer/Index.cshtml]
+[C:/Estudos/01 - Estudos/05 - ProjetoPessoal/01 - VianasCodeLab/VianasCodeLab/VianasCodeLab/Views/Computer/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcHV0ZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Estudos/01 - Estudos/06 - ProjetoPessoal/01 - VianasCodeLab/VianasCodeLab/VianasCodeLab/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Estudos/01 - Estudos/05 - ProjetoPessoal/01 - VianasCodeLab/VianasCodeLab/VianasCodeLab/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

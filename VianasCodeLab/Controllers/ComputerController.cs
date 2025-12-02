@@ -14,41 +14,39 @@ namespace VianasCodeLab.Controllers
             _context = context;
         }
 
-        [HttpGet("List")]
+        [HttpGet("list")]
         public async Task<ActionResult<IEnumerable<Computer>>> GetAll()
         {
             return await _context.Computer.ToListAsync();
         }
 
-        [HttpGet("GetById")]
+        [HttpGet("getbyid/{id:guid}")]
         public async Task<ActionResult<Computer>> GetById(Guid id)
         {
             var computer = await _context.Computer.FindAsync(id);
 
-            if (computer == null)
-            {
-                return NotFound();
-            }
+            if (computer == null) return NotFound();
 
             return computer;
         }
 
-        [HttpPost("Created")]
-        public async Task<ActionResult<Computer>> Created(Computer computer)
+        [HttpPost("created")]
+        public async Task<ActionResult<Computer>> Created([FromBody]Computer computer)
         {
+            if (!ModelState.IsValid) return BadRequest("error");
+
             _context.Computer.Add(computer);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(GetById), new { id = computer.id }, computer);
+            return Ok(computer);
         }
 
-        [HttpPut("Edit")]
-        public async Task<IActionResult> Edit(Guid id, Computer computer)
+        [HttpPut("edit/{id:guid}")]
+        public async Task<ActionResult<Computer>> Edit(Guid id, [FromBody] Computer computer)
         {
-            if (id != computer.id)
-            {
-                return BadRequest();
-            }
+            if (id != computer.id) return BadRequest();
+
+            if (!ModelState.IsValid) return BadRequest();
 
             _context.Entry(computer).State = EntityState.Modified;
 
@@ -58,20 +56,15 @@ namespace VianasCodeLab.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!ComputerExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
+                if (!_context.Computer.Any(c => c.id == id)) return NotFound();
+
+                throw;
             }
 
-            return NoContent();
+            return Ok(computer);
         }
 
-        [HttpDelete("Delete")]
+        [HttpDelete("delete/{id:guid}")]
         public async Task<IActionResult> Delete(Guid id)
         {
             var computer = await _context.Computer.FindAsync(id);
@@ -84,11 +77,6 @@ namespace VianasCodeLab.Controllers
             await _context.SaveChangesAsync();
 
             return NoContent();
-        }
-
-        private bool ComputerExists(Guid id)
-        {
-            return _context.Computer.Any(e => e.id == id);
         }
     }
 }

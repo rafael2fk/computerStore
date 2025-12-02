@@ -5,7 +5,7 @@
     "version": "1.0"
   },
   "paths": {
-    "/List": {
+    "/list": {
       "get": {
         "tags": [
           "Computer"
@@ -43,7 +43,7 @@
         }
       }
     },
-    "/GetById": {
+    "/getbyid/{id}": {
       "get": {
         "tags": [
           "Computer"
@@ -51,7 +51,8 @@
         "parameters": [
           {
             "name": "id",
-            "in": "query",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "string",
               "format": "uuid"
@@ -82,38 +83,30 @@
         }
       }
     },
-    "/Created": {
+    "/created": {
       "post": {
         "tags": [
           "Computer"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "query",
-            "schema": {
-              "type": "string",
-              "format": "uuid"
-            }
-          },
-          {
-            "name": "Name",
-            "in": "query",
-            "required": true,
-            "schema": {
-              "maxLength": 100,
-              "minLength": 2,
-              "type": "string"
-            }
-          },
-          {
-            "name": "Status",
-            "in": "query",
-            "schema": {
-              "type": "boolean"
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Computer"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Computer"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Computer"
+              }
             }
           }
-        ],
+        },
         "responses": {
           "200": {
             "description": "OK",
@@ -138,7 +131,7 @@
         }
       }
     },
-    "/Edit": {
+    "/edit/{id}": {
       "put": {
         "tags": [
           "Computer"
@@ -146,46 +139,58 @@
         "parameters": [
           {
             "name": "id",
-            "in": "query",
-            "schema": {
-              "type": "string",
-              "format": "uuid"
-            }
-          },
-          {
-            "name": "id",
-            "in": "query",
-            "schema": {
-              "type": "string",
-              "format": "uuid"
-            }
-          },
-          {
-            "name": "Name",
-            "in": "query",
+            "in": "path",
             "required": true,
             "schema": {
-              "maxLength": 100,
-              "minLength": 2,
-              "type": "string"
-            }
-          },
-          {
-            "name": "Status",
-            "in": "query",
-            "schema": {
-              "type": "boolean"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Computer"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Computer"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Computer"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Computer"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Computer"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Computer"
+                }
+              }
+            }
           }
         }
       }
     },
-    "/Delete": {
+    "/delete": {
       "delete": {
         "tags": [
           "Computer"

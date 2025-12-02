@@ -1,18 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Estudos\\01 - Estudos\\06 - ProjetoPessoal\\01 - VianasCodeLab\\VianasCodeLab\\",
+  "WorkspaceRootPath": "C:\\Estudos\\01 - Estudos\\05 - ProjetoPessoal\\01 - VianasCodeLab\\VianasCodeLab\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{08DFC871-87AB-4A84-9DDE-E628940599A0}|VianasCodeLab\\VianasCodeLab.csproj|c:\\estudos\\01 - estudos\\06 - projetopessoal\\01 - vianascodelab\\vianascodelab\\vianascodelab\\controllers\\computercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{08DFC871-87AB-4A84-9DDE-E628940599A0}|VianasCodeLab\\VianasCodeLab.csproj|c:\\estudos\\01 - estudos\\05 - projetopessoal\\01 - vianascodelab\\vianascodelab\\vianascodelab\\controllers\\computercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08DFC871-87AB-4A84-9DDE-E628940599A0}|VianasCodeLab\\VianasCodeLab.csproj|solutionrelative:vianascodelab\\controllers\\computercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08DFC871-87AB-4A84-9DDE-E628940599A0}|VianasCodeLab\\VianasCodeLab.csproj|c:\\estudos\\01 - estudos\\06 - projetopessoal\\01 - vianascodelab\\vianascodelab\\vianascodelab\\data\\apidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08DFC871-87AB-4A84-9DDE-E628940599A0}|VianasCodeLab\\VianasCodeLab.csproj|solutionrelative:vianascodelab\\data\\apidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08DFC871-87AB-4A84-9DDE-E628940599A0}|VianasCodeLab\\VianasCodeLab.csproj|c:\\estudos\\01 - estudos\\06 - projetopessoal\\01 - vianascodelab\\vianascodelab\\vianascodelab\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08DFC871-87AB-4A84-9DDE-E628940599A0}|VianasCodeLab\\VianasCodeLab.csproj|solutionrelative:vianascodelab\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -44,39 +36,13 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ComputerController.cs",
-              "DocumentMoniker": "C:\\Estudos\\01 - Estudos\\06 - ProjetoPessoal\\01 - VianasCodeLab\\VianasCodeLab\\VianasCodeLab\\Controllers\\ComputerController.cs",
+              "DocumentMoniker": "C:\\Estudos\\01 - Estudos\\05 - ProjetoPessoal\\01 - VianasCodeLab\\VianasCodeLab\\VianasCodeLab\\Controllers\\ComputerController.cs",
               "RelativeDocumentMoniker": "VianasCodeLab\\Controllers\\ComputerController.cs",
-              "ToolTip": "C:\\Estudos\\01 - Estudos\\06 - ProjetoPessoal\\01 - VianasCodeLab\\VianasCodeLab\\VianasCodeLab\\Controllers\\ComputerController.cs*",
+              "ToolTip": "C:\\Estudos\\01 - Estudos\\05 - ProjetoPessoal\\01 - VianasCodeLab\\VianasCodeLab\\VianasCodeLab\\Controllers\\ComputerController.cs*",
               "RelativeToolTip": "VianasCodeLab\\Controllers\\ComputerController.cs*",
-              "ViewState": "AgIAADoAAAAAAAAAAAAcwEkAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAwwFAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T18:23:06.937Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ApiDbContext.cs",
-              "DocumentMoniker": "C:\\Estudos\\01 - Estudos\\06 - ProjetoPessoal\\01 - VianasCodeLab\\VianasCodeLab\\VianasCodeLab\\Data\\ApiDbContext.cs",
-              "RelativeDocumentMoniker": "VianasCodeLab\\Data\\ApiDbContext.cs",
-              "ToolTip": "C:\\Estudos\\01 - Estudos\\06 - ProjetoPessoal\\01 - VianasCodeLab\\VianasCodeLab\\VianasCodeLab\\Data\\ApiDbContext.cs",
-              "RelativeToolTip": "VianasCodeLab\\Data\\ApiDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T18:23:03.314Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Estudos\\01 - Estudos\\06 - ProjetoPessoal\\01 - VianasCodeLab\\VianasCodeLab\\VianasCodeLab\\Program.cs",
-              "RelativeDocumentMoniker": "VianasCodeLab\\Program.cs",
-              "ToolTip": "C:\\Estudos\\01 - Estudos\\06 - ProjetoPessoal\\01 - VianasCodeLab\\VianasCodeLab\\VianasCodeLab\\Program.cs",
-              "RelativeToolTip": "VianasCodeLab\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T18:22:59.885Z",
+              "WhenOpened": "2025-12-01T23:18:28.524Z",
               "EditorCaption": ""
             }
           ]

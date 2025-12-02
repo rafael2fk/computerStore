@@ -8037,11 +8037,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Estudos\\01 - Estudos\\06 - ProjetoPessoal\\01 - VianasCodeLab\\VianasCodeLab\\VianasCodeLab\\VianasCodeLab.csproj",
+      "projectUniqueName": "C:\\Estudos\\01 - Estudos\\05 - ProjetoPessoal\\01 - VianasCodeLab\\VianasCodeLab\\VianasCodeLab\\VianasCodeLab.csproj",
       "projectName": "VianasCodeLab",
-      "projectPath": "C:\\Estudos\\01 - Estudos\\06 - ProjetoPessoal\\01 - VianasCodeLab\\VianasCodeLab\\VianasCodeLab\\VianasCodeLab.csproj",
+      "projectPath": "C:\\Estudos\\01 - Estudos\\05 - ProjetoPessoal\\01 - VianasCodeLab\\VianasCodeLab\\VianasCodeLab\\VianasCodeLab.csproj",
       "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-      "outputPath": "C:\\Estudos\\01 - Estudos\\06 - ProjetoPessoal\\01 - VianasCodeLab\\VianasCodeLab\\VianasCodeLab\\obj\\",
+      "outputPath": "C:\\Estudos\\01 - Estudos\\05 - ProjetoPessoal\\01 - VianasCodeLab\\VianasCodeLab\\VianasCodeLab\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
