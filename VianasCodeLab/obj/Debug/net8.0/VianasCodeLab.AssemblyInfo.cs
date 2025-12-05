@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VianasCodeLab")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+23268341d1678aca699f1870c60da764a5ed886f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+10b7ac4a533a285c861ea90b8c658c30b62a6fdc")]
 [assembly: System.Reflection.AssemblyProductAttribute("VianasCodeLab")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VianasCodeLab")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

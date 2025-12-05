@@ -1,8 +1,147 @@
 [
   {
+    "ContainingType": "VianasCodeLab.Controllers.ComponentController",
+    "Method": "GetAll",
+    "RelativePath": "component",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[VianasCodeLab.Model.Component, VianasCodeLab, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VianasCodeLab.Controllers.ComponentController",
+    "Method": "Create",
+    "RelativePath": "component",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "component",
+        "Type": "VianasCodeLab.Model.Component",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "VianasCodeLab.Model.Component",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VianasCodeLab.Controllers.ComponentController",
+    "Method": "GetById",
+    "RelativePath": "component/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "VianasCodeLab.Model.Component",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VianasCodeLab.Controllers.ComponentController",
+    "Method": "Edit",
+    "RelativePath": "component/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "component",
+        "Type": "VianasCodeLab.Model.Component",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "VianasCodeLab.Model.Component",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VianasCodeLab.Controllers.ComponentController",
+    "Method": "Delete",
+    "RelativePath": "component/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "VianasCodeLab.Controllers.ComputerController",
-    "Method": "Created",
-    "RelativePath": "created",
+    "Method": "GetAll",
+    "RelativePath": "computer",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[VianasCodeLab.Model.Computer, VianasCodeLab, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VianasCodeLab.Controllers.ComputerController",
+    "Method": "Create",
+    "RelativePath": "computer",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -27,24 +166,34 @@
   },
   {
     "ContainingType": "VianasCodeLab.Controllers.ComputerController",
-    "Method": "Delete",
-    "RelativePath": "delete",
-    "HttpMethod": "DELETE",
+    "Method": "GetById",
+    "RelativePath": "computer/{id}",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "id",
         "Type": "System.Guid",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "VianasCodeLab.Model.Computer",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "VianasCodeLab.Controllers.ComputerController",
     "Method": "Edit",
-    "RelativePath": "edit/{id}",
+    "RelativePath": "computer/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -74,9 +223,9 @@
   },
   {
     "ContainingType": "VianasCodeLab.Controllers.ComputerController",
-    "Method": "GetById",
-    "RelativePath": "getbyid/{id}",
-    "HttpMethod": "GET",
+    "Method": "Delete",
+    "RelativePath": "computer/{id}",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -86,36 +235,6 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "VianasCodeLab.Model.Computer",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "VianasCodeLab.Controllers.ComputerController",
-    "Method": "GetAll",
-    "RelativePath": "list",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[VianasCodeLab.Model.Computer, VianasCodeLab, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   }
 ]

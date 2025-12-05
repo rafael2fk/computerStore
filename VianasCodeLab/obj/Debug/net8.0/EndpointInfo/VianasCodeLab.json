@@ -5,10 +5,10 @@
     "version": "1.0"
   },
   "paths": {
-    "/list": {
+    "/component": {
       "get": {
         "tags": [
-          "Computer"
+          "Component"
         ],
         "responses": {
           "200": {
@@ -18,7 +18,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Computer"
+                    "$ref": "#/components/schemas/Component"
                   }
                 }
               },
@@ -26,7 +26,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Computer"
+                    "$ref": "#/components/schemas/Component"
                   }
                 }
               },
@@ -34,8 +34,54 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Computer"
+                    "$ref": "#/components/schemas/Component"
                   }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Component"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Component"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Component"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Component"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Component"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Component"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Component"
                 }
               }
             }
@@ -43,10 +89,10 @@
         }
       }
     },
-    "/getbyid/{id}": {
+    "/component/{id}": {
       "get": {
         "tags": [
-          "Computer"
+          "Component"
         ],
         "parameters": [
           {
@@ -65,25 +111,139 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Computer"
+                  "$ref": "#/components/schemas/Component"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Computer"
+                  "$ref": "#/components/schemas/Component"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Computer"
+                  "$ref": "#/components/schemas/Component"
                 }
               }
             }
           }
         }
+      },
+      "put": {
+        "tags": [
+          "Component"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Component"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Component"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Component"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Component"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Component"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Component"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Component"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
       }
     },
-    "/created": {
+    "/computer": {
+      "get": {
+        "tags": [
+          "Computer"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Computer"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Computer"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Computer"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
       "post": {
         "tags": [
           "Computer"
@@ -131,7 +291,45 @@
         }
       }
     },
-    "/edit/{id}": {
+    "/computer/{id}": {
+      "get": {
+        "tags": [
+          "Computer"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Computer"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Computer"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Computer"
+                }
+              }
+            }
+          }
+        }
+      },
       "put": {
         "tags": [
           "Computer"
@@ -188,9 +386,7 @@
             }
           }
         }
-      }
-    },
-    "/delete": {
+      },
       "delete": {
         "tags": [
           "Computer"
@@ -198,7 +394,8 @@
         "parameters": [
           {
             "name": "id",
-            "in": "query",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "string",
               "format": "uuid"
@@ -215,6 +412,45 @@
   },
   "components": {
     "schemas": {
+      "Component": {
+        "required": [
+          "description",
+          "mark"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "description": {
+            "maxLength": 50,
+            "minLength": 2,
+            "type": "string"
+          },
+          "amount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "mark": {
+            "maxLength": 50,
+            "minLength": 2,
+            "type": "string"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "status": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
       "Computer": {
         "required": [
           "name"
@@ -226,7 +462,7 @@
             "format": "uuid"
           },
           "name": {
-            "maxLength": 100,
+            "maxLength": 50,
             "minLength": 2,
             "type": "string"
           },
